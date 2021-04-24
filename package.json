@@ -1,0 +1,8 @@
+{
+  "name": "@grider-courses/common",
+  "version": "1.0.0",
+  "description": "Shared libraries for various S Grider courses.",
+  "main": "index.js",
+  "author": "Rob Thorne <rob@torenware.com>",
+  "license": "MIT"
+}
