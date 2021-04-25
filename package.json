@@ -1,10 +1,10 @@
 {
   "name": "@grider-courses/common",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shared libraries for various S Grider courses.",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
-  "files" : [
+  "files": [
     "build/**/*"
   ],
   "author": "Rob Thorne <rob@torenware.com>",
