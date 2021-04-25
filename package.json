@@ -2,7 +2,19 @@
   "name": "@grider-courses/common",
   "version": "1.0.0",
   "description": "Shared libraries for various S Grider courses.",
-  "main": "index.js",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files" : [
+    "build/**/*"
+  ],
   "author": "Rob Thorne <rob@torenware.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "clean": "del ./build/*",
+    "build": "npm run clean && tsc"
+  },
+  "devDependencies": {
+    "del-cli": "^3.0.1",
+    "typescript": "^4.2.4"
+  }
 }
