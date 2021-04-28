@@ -1,6 +1,6 @@
 {
   "name": "@grider-courses/common",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Shared libraries for various S Grider courses.",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
