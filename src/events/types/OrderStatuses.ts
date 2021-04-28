@@ -1,4 +1,4 @@
-enum OrderStatus {
+export enum OrderStatus {
   // Initial state
   Created = 'created',
 
