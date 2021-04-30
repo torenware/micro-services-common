@@ -12,7 +12,7 @@ interface Event {
 abstract class Listener<T extends Event> {
   abstract subject: T['subject'];
   abstract queueGroupName: string;
-  private client: Stan;
+  protected client: Stan;
   // In millisecs:
   protected ackWait = 5 * 1000;
 
