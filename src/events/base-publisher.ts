@@ -27,7 +27,7 @@ abstract class Publisher<T extends Event> {
     });
   }
 
-  publish(data: T['data']): Promise<void> {
+  protected publish(data: T['data']): Promise<void> {
     return this.callPublish(data);
   }
 }
