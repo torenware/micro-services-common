@@ -14,7 +14,7 @@ abstract class Publisher<T extends Event> {
     this.client = client;
   }
 
-  publish(data: T['data']): Promise<void> {
+  protected callPublish(data: T['data']): Promise<void> {
     return new Promise((resolve, reject) => {
       const packedData = JSON.stringify(data);
       this.client.publish(this.subject, packedData, (err, guid) => {
@@ -25,6 +25,10 @@ abstract class Publisher<T extends Event> {
         resolve();
       });
     });
+  }
+
+  publish(data: T['data']): Promise<void> {
+    return this.callPublish(data);
   }
 }
 
