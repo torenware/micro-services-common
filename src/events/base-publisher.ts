@@ -21,7 +21,7 @@ abstract class Publisher<T extends Event> {
         if (err) {
           return reject(err);
         }
-        console.log(`Pushed event ${guid}`);
+        console.log(`Pushed event ${guid} to ${this.subject}`);
         resolve();
       });
     });
