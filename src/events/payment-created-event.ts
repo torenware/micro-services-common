@@ -6,6 +6,7 @@ export interface PaymentCreatedEvent {
     id: string;
     version: number;
     orderId: string;
+    ticketId: string;
     stripeId: string;
   };
 }
